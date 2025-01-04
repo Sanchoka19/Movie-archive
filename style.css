@@ -1,0 +1,120 @@
+@font-face {
+    font-family: film-font;
+    src: url(./font/IM_Fell_English_SC/IMFellEnglishSC-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, button{
+    font-family: film-font, sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(90deg, grey, rgba(235, 89, 89, 0.515));
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-wrapper {
+    background-color: rgba(0, 0, 0, 0.419);
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px grey;
+
+    padding: 40px;
+}
+
+.input-movie{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.input-movie button{
+    padding: 0 40px;
+    border: none;
+    background-color: rgba(255, 68, 0, 0.637);
+    border-radius: 0 20px 20px 0;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all .2s ease;
+    font-family: sans-serif;
+}
+
+.input-movie button:active{
+    color: black;
+}
+
+.input-movie input{
+    height: 45px;
+    width: 200px;
+    border-radius: 20px 0 0 20px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.181);
+    padding: 0 20px;
+    outline: none;
+    font-size: 13px;
+    color: #fff;
+}
+
+
+.container-wrapper h1 {
+    font-size: 5rem;
+    margin-bottom: 20px;
+}
+
+.container-wrapper ul {
+    display: flex;
+    flex-direction: column;
+    
+    gap: 10px;
+    width: 100%; 
+}
+
+.container-wrapper ul li {
+    border-radius: 20px;
+    background-color: bisque;
+    padding: 5px 20px;
+    text-align: center;
+
+    font-size: 2rem;
+    transition: all .2s ease;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container-wrapper ul li span{
+    display: flex;
+    padding: 5px;
+}
+
+.container-wrapper ul li span:hover{
+    background-color: rgba(0, 0, 0, 0.668);
+    border-radius: 50%;
+}
+
+.container-wrapper ul li:hover {
+    font-size: 2.4rem;
+}
+
+.ul-item{
+    text-decoration: line-through;
+}
